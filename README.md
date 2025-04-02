@@ -54,6 +54,16 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - Data provided by cryptocurrency price APIs
 - Built for the GNOME desktop environment
 
+## Donations
+
+If you find this extension useful and would like to support its development, you can donate using the following cryptocurrency addresses:
+
+- **BTC**: bc1qaze7e0k3y2f8wp7ndaj22cpzzqjglvptlk3d3g
+- **ETH**: 0x626B7D57ed4d7E146Bf866De2479ADFEC4316dd8
+- **LTC**: ltc1qtc2es53lz6du8ks5lxgu38xhy7ehjxrfxe0486
+- **SOL**: 7JB5TSWqNtMnePN7Hgb4HiXaQSAZt8YMmbZJjySkvFKa
+- **XMR**: 47TAd5biQLLMNnFfmqkLtzVm9z6kLrkYpMv7t8UHTf217Pj3JqQdStMZk8naG3d3AzSbvGQd718BsVjQ8XNtfRFN8td4J9E
+
 ## Support
 
 If you encounter any issues or have suggestions, please file them in the [issue tracker](https://github.com/bilgi42/Crypto-Tracker-Gnome/issues).
