@@ -2,6 +2,15 @@
 
 A GNOME Shell extension for tracking cryptocurrency balances in your preferred fiat currency.
 
+![image](https://github.com/user-attachments/assets/041bcd4c-79c3-418d-8fb0-95192acd6ab3)
+
+![image](https://github.com/user-attachments/assets/54739d38-ffa0-4746-be25-ef19a6d9f927)
+
+## Where to generate the JSON config
+
+[HERE](https://bilgi42.github.io/polybar-crypto-track/)
+
+
 ## Features
 
 - Track multiple cryptocurrencies in real-time
