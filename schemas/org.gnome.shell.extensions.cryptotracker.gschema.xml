@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- GSchema XML file defines settings for GNOME extensions -->
+<schemalist>
+  <!-- The schema ID must match what's referenced in metadata.json under 'settings-schema' -->
+  <!-- The path determines where in dconf the settings will be stored -->
+  <schema id="org.gnome.shell.extensions.cryptotracker" path="/org/gnome/shell/extensions/cryptotracker/">
+    <!-- Each key defines a setting that can be accessed via GSettings -->
+    <!-- 'type="b"' means this is a boolean value (true/false) -->
+    <key name="show-indicator" type="b">
+      <!-- The default value for this setting -->
+      <default>true</default>
+    </key>
+    
+    <!-- String setting to store crypto-track.json content -->
+    <key name="crypto-json" type="s">
+      <default>'[]'</default>
+      <summary>Cryptocurrency tracking configuration</summary>
+      <description>JSON configuration for cryptocurrency wallets and settings</description>
+    </key>
+  </schema>
+</schemalist>

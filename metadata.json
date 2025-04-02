@@ -1,0 +1,11 @@
+{
+  "name": "Crypto Tracker",
+  "description": "Track all your cryptocurrency balance in fiat of your choice",
+  "uuid": "cryptotracker@bilgi.works",
+  "shell-version": [
+    "47"
+  ],
+  "url": "https://github.com/bilgi42/Crypto-Tracker-Gnome",
+  "gettext-domain": "cryptotracker@bilgi.works",
+  "settings-schema": "org.gnome.shell.extensions.cryptotracker"
+}
