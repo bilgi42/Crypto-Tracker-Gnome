@@ -1,9 +1,10 @@
 {
   "name": "Crypto Tracker",
-  "description": "Track all your cryptocurrency balance in fiat of your choice",
+  "description": "Track all your cryptocurrency balance in fiat of your choice. This extension uses CoinGecko and BlockCypher API services to function",
   "uuid": "cryptotracker@bilgi.works",
+  "version": "1.0.1",
   "shell-version": [
-    "47"
+    "47","48"
   ],
   "url": "https://github.com/bilgi42/Crypto-Tracker-Gnome",
   "gettext-domain": "cryptotracker@bilgi.works",

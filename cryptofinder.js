@@ -51,34 +51,11 @@ function httpRequest(url) {
   });
 }
 
-// Find the path to our extension directory
-function getExtensionPath() {
-  // Try to find the extension directory
-  const extensionDir = Gio.File.new_for_path(GLib.build_filenamev([
-    GLib.get_home_dir(), 
-    '.local', 
-    'share', 
-    'gnome-shell', 
-    'extensions', 
-    'cryptotracker@bilgi.works'
-  ]));
-  
-  // Verify the directory exists
-  if (!extensionDir.query_exists(null)) {
-    console.error('Extension directory not found');
-    return null;
-  }
-  
-  return extensionDir.get_path();
-}
-
 // Read the JSON file
-export async function getCryptoBalance(settings = null) {
+export async function getCryptoBalance(settings = null, extensionPath = null) {
   try {
-    // Get extension path
-    const extensionPath = getExtensionPath();
     if (!extensionPath) {
-      throw new Error('Extension directory not found');
+      throw new Error('Extension path not provided');
     }
     
     // Read the JSON file using GLib/Gio

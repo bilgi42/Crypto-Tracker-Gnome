@@ -93,7 +93,7 @@ const Indicator = GObject.registerClass(
         async _updateBalance() {
             try {
                 this._balanceLabel.set_text(_('Updating...'));
-                const result = await getCryptoBalance(this._settings);
+                const result = await getCryptoBalance(this._settings, this._extensionPath);
                 this._lastBalance = result.formattedBalance;
                 this._balanceLabel.set_text(result.formattedBalance);
                 
@@ -122,7 +122,7 @@ const Indicator = GObject.registerClass(
  */
 // The main extension class that GNOME Shell interacts with
 // Must extend the Extension class and implement enable() and disable() methods
-export default class IndicatorExampleExtension extends Extension {
+export default class CryptoTrackerExtension extends Extension {
     // Called when the extension is enabled (activated by the user or at startup)
     enable() {
         // Create an instance of our custom Indicator
@@ -131,8 +131,9 @@ export default class IndicatorExampleExtension extends Extension {
         // Create a new GSettings object
         this._settings = this.getSettings();
         
-        // Store settings in indicator
+        // Store settings and path in indicator
         this._indicator._settings = this._settings;
+        this._indicator._extensionPath = this.path;
 
         // Add the indicator to the status area of the top panel
         // this.uuid ensures a unique identifier for this extension's UI elements
